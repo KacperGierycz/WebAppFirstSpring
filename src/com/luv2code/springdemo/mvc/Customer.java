@@ -7,9 +7,9 @@ public class Customer {
 	
 	private String firstName;
 	
-	@NotNull(message="is required")
-	@Size(min=1)
-	private String LastName;
+	@NotNull
+	@Size(min=1, message="is required")
+	private String lastName;
 
 	public String getFirstName() {
 		return firstName;
@@ -20,11 +20,11 @@ public class Customer {
 	}
 
 	public String getLastName() {
-		return LastName;
+		return lastName;
 	}
 
 	public void setLastName(String lastName) {
-		LastName = lastName;
+		this.lastName = lastName;
 	}
 	
 
